@@ -14,8 +14,17 @@ module.exports = {
         'gray-200': '#F1F2F4',
         'green': '#41C877',
         'red': '#C84141'
-      }
+      },
     },
+    screens: {
+      'xs': '320px',
+      ...defaultTheme.screens,
+    },
+    container: {
+      padding: {
+        xs: '1rem'
+      }
+    }
   },
   plugins: [],
 }
