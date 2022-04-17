@@ -1,7 +1,11 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
+const plugin = require('tailwindcss/plugin')
 
 module.exports = {
-  content: ['./app/**/*.{html,js}'],
+  content: [
+    './app/**/*.{html,js}',
+    './node_modules/flowbite/**/*.js'
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -26,5 +30,10 @@ module.exports = {
       }
     }
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin'),
+    plugin(function({ addVariant }) {
+      addVariant('not-last', '&:not(:last-child)')
+    }),
+  ],
 }
