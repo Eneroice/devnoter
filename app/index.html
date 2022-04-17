@@ -4,9 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/output.css">
     <title>DevNoter</title>
 </head>
 <body>
+    <!-- HEADER -->
+    <div class="container mx-auto flex justify-between items-center py-8">
+        <a href="/" class="text-2xl font-bold text-alt">DevNoter | <span class="text-main">Adelian</span></a>
+        <div class="flex items-center">
+            <select class="py-3 px-6 appearance-none bg-transparent rounded-lg mr-8 border border-solid border-gray-200 text-sm font-bold">
+                <option value="en">English</option>
+                <option value="ru">Русский</option>
+            </select>
+            <a href="" class="py-3 px-6 bg-gray-200 rounded-lg border border-solid border-gray-200 text-sm font-bold text-alt hover:bg-main hover:border-main hover:text-white transition">Settings</a>
+        </div>
+    </div>
+    <!-- NOTIFY-BAR -->
+    <div class="py-8 bg-gray-100">
+        <div class="container mx-auto flex justify-between items-center ">
+            <p class="text-sm font-bold text-alt">Last note in 23:55, 15.03.2021 — <a href="" class="text-main underline underline-offset-4">My First Note!</a></p>
+            <a href="" class="py-3 px-6 bg-green rounded-lg border border-solid border-green text-sm font-bold text-gray-100 hover:bg-main hover:border-main transition capitalize">New note</a>
+        </div>
+    </div>
+    <!-- NOTES TABLE -->
+    <div class="container mx-auto my-12">
+        <p class="mb-8 text-2xl font-bold text-alt text-center uppercase">Published notes</p>
+        <table class="table-fixed w-full">
+            <thead>
+                <tr class="text-lg font-bold text-alt">
+                    <th class="border-b border-solid border-green">Title</th>
+                    <th class="border-b border-solid border-main">Time</th>
+                    <th class="border-b border-solid border-main">Date</th>
+                    <th class="border-b border-solid border-gray-200">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd:bg-gray-100 even:bg-white">
+                    <th class="p-4 text-lg font-normal text-alt text-left">My First Note</th>
+                    <th class="p-4 text-lg font-normal text-alt text-center">23:55</th>
+                    <th class="p-4 text-lg font-normal text-alt text-center">15.03.2021</th>
+                    <th class="p-4 text-right">
+                        <a href="" class="inline-block mr-3 w-8 h-8 bg-red rounded-lg border border-solid border-red text-center leading-8 text-lg font-bold text-white hover:bg-main hover:border-main transition">D</a>
+                        <a href="" class="inline-block mr-3 w-8 h-8 bg-main rounded-lg border border-solid border-main text-center leading-8 text-lg font-bold text-white hover:bg-main hover:border-main transition">E</a>
+                        <a href="" class="inline-block w-8 h-8 bg-gray-200 rounded-lg border border-solid border-gray-200 text-center leading-8 text-lg font-bold text-alt hover:bg-main hover:border-main hover:text-white transition">V</a>
+                    </th>
+                </tr>
+                <tr class="odd:bg-gray-100 even:bg-white">
+                    <th class="p-4 text-lg font-normal text-alt text-left">My First Note</th>
+                    <th class="p-4 text-lg font-normal text-alt text-center">23:55</th>
+                    <th class="p-4 text-lg font-normal text-alt text-center">15.03.2021</th>
+                    <th class="p-4 text-right">
+                        <a href="" class="inline-block mr-3 w-8 h-8 bg-red rounded-lg border border-solid border-red text-center leading-8 text-lg font-bold text-white hover:bg-main hover:border-main transition">D</a>
+                        <a href="" class="inline-block mr-3 w-8 h-8 bg-main rounded-lg border border-solid border-main text-center leading-8 text-lg font-bold text-white hover:bg-main hover:border-main transition">E</a>
+                        <a href="" class="inline-block w-8 h-8 bg-gray-200 rounded-lg border border-solid border-gray-200 text-center leading-8 text-lg font-bold text-alt hover:bg-main hover:border-main hover:text-white transition">V</a>
+                    </th>
+                </tr>
+                <tr class="odd:bg-gray-100 even:bg-white">
+                    <th class="p-4 text-lg font-normal text-alt text-left">My First Note</th>
+                    <th class="p-4 text-lg font-normal text-alt text-center">23:55</th>
+                    <th class="p-4 text-lg font-normal text-alt text-center">15.03.2021</th>
+                    <th class="p-4 text-right">
+                        <a href="" class="inline-block mr-3 w-8 h-8 bg-red rounded-lg border border-solid border-red text-center leading-8 text-lg font-bold text-white hover:bg-main hover:border-main transition">D</a>
+                        <a href="" class="inline-block mr-3 w-8 h-8 bg-main rounded-lg border border-solid border-main text-center leading-8 text-lg font-bold text-white hover:bg-main hover:border-main transition">E</a>
+                        <a href="" class="inline-block w-8 h-8 bg-gray-200 rounded-lg border border-solid border-gray-200 text-center leading-8 text-lg font-bold text-alt hover:bg-main hover:border-main hover:text-white transition">V</a>
+                    </th>
+                </tr>
+                <tr class="odd:bg-gray-100 even:bg-white">
+                    <th class="p-4 text-lg font-normal text-alt text-left">My First Note</th>
+                    <th class="p-4 text-lg font-normal text-alt text-center">23:55</th>
+                    <th class="p-4 text-lg font-normal text-alt text-center">15.03.2021</th>
+                    <th class="p-4 text-right">
+                        <a href="" class="inline-block mr-3 w-8 h-8 bg-red rounded-lg border border-solid border-red text-center leading-8 text-lg font-bold text-white hover:bg-main hover:border-main transition">D</a>
+                        <a href="" class="inline-block mr-3 w-8 h-8 bg-main rounded-lg border border-solid border-main text-center leading-8 text-lg font-bold text-white hover:bg-main hover:border-main transition">E</a>
+                        <a href="" class="inline-block w-8 h-8 bg-gray-200 rounded-lg border border-solid border-gray-200 text-center leading-8 text-lg font-bold text-alt hover:bg-main hover:border-main hover:text-white transition">V</a>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <a href="//github.com/Eneroice/devnoter" target="_blank" class="fixed right-8 bottom-8"><img src="./github-logo.svg" alt="GitHub repository"></a>
 </body>
 </html>
